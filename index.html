@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exam result </title>
+
+<style>
+  form img{
+    width: 300px;
+  }
+  body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+.student-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+  
+
+.student-data h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.student-data.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.student-data.info span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.student-data.info span h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.student-data.info span.rol {
+  color: blueviolet;
+}
+
+.student-data.info span.nam {
+  color: green;
+}
+
+.student-data.info span.cel {
+  color: red;
+}
+
+.student-data.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.student-data.result table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.student-data.result th,
+.student-data.result td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.student-data.result th {
+  background-color: #f2f2f2;
+}
+
+.student-data.result tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.student-data.result tr:hover {
+  background-color: #ddd;
+}
+
+.student-data.result th {
+  font-weight: bold;
+  color: #333;
+}
+
+.student-data.result td {
+  color: #555;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+form img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+form button {
+  background-color: blueviolet;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+form button:hover {
+  background-color: #8f71ff;
+}
+
+
+.result {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 2px solid #ccc;
+}
+
+.result table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.result th,.result td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.result th {
+  background-color: #f2f2f2;
+}
+
+.result tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.result tr:hover {
+  background-color: #ddd;
+}
+
+</style>
+
+  </head>
+<body>
+
+
+<form action="" class="hide">
+  <img src="/dawlada.jpg" >
+  <p>Fadlan cardkaaga ku qoran ku buuxi</p>
+  <input type="text" name="role-number" id="role-n" required placeholder="Tiro-Taxane">
+  <input type="text" name="name" id="name" required placeholder="M. Ardayga">
+  <input type="text" name="school" id="school" required placeholder="M. Dugsiga">
+  <button type="submit">Raadi</button>  
+</form> 
+
+
+<div class="student-data" style="display: none;">
+  <div class="info">
+    <span>    <h3 style="color: gray;">Rool Lambar</h3>  <h3 class="rol" style="color: blueviolet;"></h3>  </span>
+<hr>
+    
+<span>    <h3 style="color: gray;">M. Ardayga</h3>  <h3 class="nam" style="color: blueviolet;"></h3>  </span>
+<span>    <h3 style="color: gray;">M. Dugsiga</h3>  <h3 class="dug" style="color: blueviolet;"></h3>  </span>
+<hr>
+<span>    <h3 style="color: gray;">Celcelis</h3>  <h3 class="cel" style="color: blueviolet;">E</h3>  </span>
+<span>    <h3 style="color: gray;">Go'aan </h3>  <h3 class="cel" style="color: red;">Haray</h3>  </span>
+  
+  </div>
+
+  <div class="result">
+    <table>
+      <tr>
+        <th>Subject</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>Tarbiyo</td>
+        <td>E</td>
+      </tr>
+      <tr>
+        <td>Crabi</td>
+        <td>C-</td>
+      </tr>
+      <tr>
+        <td>Juqraafi</td>
+        <td>C</td>
+      </tr>
+      <tr>
+        <td>Taariikh</td>
+        <td>D</td>
+      </tr>
+      <tr>
+        <td>Xisaab</td>
+        <td>E</td>
+      </tr>
+      <tr>
+        <td>Fisikis</td>
+        <td>E</td>
+      </tr>
+      <tr>
+        <td>Kimistiri</td>
+        <td>D-</td>
+      </tr>
+      <tr>
+        <td>Soomaali</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>Biology</td>
+        <td>B-</td>
+      </tr>
+      <tr>
+        <td>Ingiriis</td>
+        <td>D</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<script src="/app.js" type="module"></script>
+</body>
+</html>
