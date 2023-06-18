@@ -39,8 +39,8 @@ form.addEventListener('submit', (event) => {
     school = form.querySelector('#school').value,
     rolNumber = form.querySelector('#role-n').value, 
     fRole = document.querySelector('.student-data .rol'),
-    fSchol = document.querySelector('.student-data .nam'),
-    fname = document.querySelector('.student-data .dug')
+    fSchol = document.querySelector('.student-data .dug'),
+    fname = document.querySelector('.student-data .nam')
 
     fRole.innerHTML = rolNumber
     fSchol.innerHTML = school
