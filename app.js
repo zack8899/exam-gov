@@ -7,12 +7,13 @@
       
         // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCH5dRDGlaUobjil4Hu5tq0hNG4oiPkq1A",
-  authDomain: "national-exam-c980a.firebaseapp.com",
-  projectId: "national-exam-c980a",
-  storageBucket: "national-exam-c980a.appspot.com",
-  messagingSenderId: "140611657000",
-  appId: "1:140611657000:web:d2e72f0b57dbb75f72041d"
+  apiKey: "AIzaSyD87dn4Nb-FQ8eo-Mj0-4mOSYjCQns2zeA",
+  authDomain: "jackan-f7100.firebaseapp.com",
+  databaseURL: "https://jackan-f7100-default-rtdb.firebaseio.com",
+  projectId: "jackan-f7100",
+  storageBucket: "jackan-f7100.appspot.com",
+  messagingSenderId: "677584601589",
+  appId: "1:677584601589:web:76152cef2d7cf43e93e0bc"
 };
       
         // Initialize Firebase
